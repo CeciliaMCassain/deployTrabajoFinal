@@ -18,7 +18,7 @@ class Producto(Model):
     # que indicar directamente en la metaclase
 
 class Meta:
-    db_table = "Product_table"
+    db_table = "product_table"
 
 
     def __str__(self):
