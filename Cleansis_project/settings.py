@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-4_rjb4h3l7d9^x_#nje-os@5y453!^ytqet-3&m$ds7j3+zp-5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["CeciliaMCassain.pythonanywhere.com"]
+ALLOWED_HOSTS = ["CeciliaMCassain.pythonanywhere.com","*"]
 
 
 # Application definition
@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "django_mysql"
     ]
 
 INSTALLED_APPS += CUSTOM_APPS
@@ -83,15 +82,22 @@ WSGI_APPLICATION = "Cleansis_project.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'CeciliaMCassain$Cleansis',
-            'USER': 'CeciliaMCassain',
-            'PASSWORD': 'pirulo1234',
-            'HOST': 'CeciliaMCassain.mysql.pythonanywhere-services.com',
-            'PORT': '3306',
-        }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / "cleansis.db.sqlite3",
+    }
 }
+
+# DATABASES = {
+# 'default': {
+#             'ENGINE': 'django.db.backends.mysql',
+#             'NAME': 'CeciliaMCassain$Cleansis',
+#             'USER': 'CeciliaMCassain',
+#             'PASSWORD': 'pirulo1234',
+#             'HOST': 'CeciliaMCassain.mysql.pythonanywhere-services.com',
+#             'PORT': '3306',
+#         }
+# }
 
 
 # Password validation
