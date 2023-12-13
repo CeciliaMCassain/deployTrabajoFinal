@@ -4,7 +4,7 @@ const carrouselImages = document.querySelectorAll(".img")
 punto.forEach( (cadaPunto , i)=> {
     
     punto[i].addEventListener('click',()=>{
-        punto.forEach( (cadaPunto , i)=>{
+        punto.forEach((cadaPunto , i)=>{
             punto[i].classList.remove('activo')
             carrouselImages[i].classList.remove("select")
         })
