@@ -12,9 +12,9 @@
 <body>
   <header>
     <section class="section_logo">
-      <div class="logo">
-        <a href="#"></a><img src="{% static './media/logo-modified (1).png' %}" alt="Logo" width="110" height="110" />
-      </div>
+      <a href="{% url 'index' %}" class="logo">
+				<img src="{% static './media/logo-modified (1).png' %}" alt="Logo" width="110" height="110" />
+			</a>
       <div class="search">
         <input type="search" placeholder="Buscar un producto">
       </div>
@@ -34,8 +34,8 @@
           <li class="menu_productos"><a href="#"><i class="fa-solid fa-broom fa-l" style="color: #ffffff;">
                 Limpieza</i></a>
             <ul class="submenu">
-              <li><a href="#">Escobas y Escobillones</a></li>
-              <li><a href="#">Sopapas y Secadores</a></li>
+              <li><a href="{% url 'escobas' %}">Escobas y Escobillones</a></li>
+							<li><a href="{% url 'secadores' %}">Sopapas y Secadores</a></li>
               <li><a href="#">Cabos y Barrenderos</a></li>
               <li><a href="#">Palas y Bolsas</a></li>
               <li><a href="#">Cepillos y Guantes</a></li>

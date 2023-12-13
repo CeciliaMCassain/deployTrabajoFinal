@@ -8,7 +8,7 @@
     overflow: hidden;
   }
   
-  .carrousel .grande {
+  .carrousel.grande {
     width: 200%;
     display: flex;
     flex-flow: row nowrap;
@@ -21,7 +21,7 @@
     transform: translateX(0%);
   }
   
-  .carrousel .img {
+  .carrousel.img {
     width: calc( 100%/2  );
     min-height: 10vh;
     transition: all 0.4s ease;
@@ -30,7 +30,7 @@
     margin:1em;
   }
   
-  .carrousel .puntos {
+  .carrousel.puntos {
     width: 100%;
     margin: 1em 0 0;
     padding: 0.4em;
@@ -41,7 +41,7 @@
    
   }
   
-  .carrousel .punto {
+  .carrousel.punto {
     width: 1em;
     height: 1em;
     margin: 1em 1em 0;
@@ -58,7 +58,7 @@
    
   }
   
-  .carrousel .punto.activo {
+  .carrousel.punto.activo {
     background-color: rgb(12, 130, 237);
   }
 
