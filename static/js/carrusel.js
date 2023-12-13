@@ -7,9 +7,7 @@ punto.forEach( ( cadaPunto , i )=> {
     punto[i].addEventListener('click',()=>{
 
       
-        let posicion  = i
-        let operacion = posicion * (-50)
-        grande.style.transform = `translateX(${ operacion }%)`
+        grande.style.transform = `translateX(${ i * (-50)}%)`
 
         punto.forEach( ( cadaPunto , i )=>{
             punto[i].classList.remove('activo')
