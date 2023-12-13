@@ -8,12 +8,15 @@ from django.views.generic.edit import DeleteView, UpdateView, CreateView
 from django.views.generic.detail import DetailView
 
 
+from django.contrib.auth.mixins import LoginRequiredMixin
+
+
 from .models import Producto
 
 # Create your views here.
 
 
-class ProductoBaseView(View):
+class ProductoBaseView(LoginRequiredMixin,View):
     template_name = 'producto.html'
     model = Producto
     fields = '__all__'
