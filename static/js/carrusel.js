@@ -8,7 +8,7 @@ punto.forEach( ( cadaPunto , i )=> {
 
       
         let posicion  = i
-        let operacion = posicion * -50
+        let operacion = posicion * (-50)
         grande.style.transform = `translateX(${ operacion }%)`
 
         punto.forEach( ( cadaPunto , i )=>{
