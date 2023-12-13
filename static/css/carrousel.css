@@ -8,7 +8,7 @@
     overflow: hidden;
   }
   
-  .carrousel.grande {
+  .carrousel.img.select {
     width: 200%;
     display: flex;
     flex-flow: row nowrap;
