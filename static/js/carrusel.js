@@ -1,4 +1,4 @@
-const grande = document.querySelector('.grande')
+const grande = document.querySelectorAll('.grande')
 const punto = document.querySelectorAll('.punto')
 
 
